@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="wrapper flex gap-2 items-center py-6 w-full bg-gray-700 ">
-        <div className="w-[20%] text-center h-full"> biddings </div>
+        <div className="w-[20%] text-center h-full text-2xl "> <h1>Art<span className="text-orange-500 font-bold" >Gallary</span> </h1> </div>
         <div className="w-[60%] h-full  justify-center flex ">
           {" "}
           <Feed />{" "}
@@ -25,8 +25,12 @@ export default function Home() {
         </div>
       </div>
       <div className="wrapper flex gap-2 items-center py-6 w-full h-screen ">
-        <div className="w-[20%] text-center h-full"> biddings </div>
-        <div className="w-[60%] h-full  justify-center flex bg-black ">
+        <div className="w-[20%] text-center m-6 h-full"> 
+          
+          <div className="w-full m-3 bg-gray-500 py-5 font-semibold text-xl " >Join Our Community</div>
+          
+           </div>
+        <div className="w-[60%] h-full justify-center flex bg-black ">
           {/* post here */}
 
           <div className="h-[800px] w-full m-6 bg-[#0D0D0D] rounded-xl ">
