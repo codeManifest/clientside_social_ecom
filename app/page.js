@@ -39,7 +39,7 @@ export default function Home() {
               <p className="my-5" >
                 Lorem ipsum dolor sit😍 amet consectetur adipisicing elit. Atque
                 animi nobis fugiat laboriosam quia eos reprehenderit quae
-                similique ducimus quibusdam..
+                similique ducimus quibusdam hello..
               </p>
             </div>
             
