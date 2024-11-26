@@ -1,4 +1,7 @@
-import Image from "next/image";
+'use client';
+
+
+import { useRouter } from 'next/navigation';
 import Feed from "./components/Feed";
 import User_profile from "./components/User_profile";
 
@@ -9,17 +12,23 @@ import { FaCommentDots } from "react-icons/fa";
 // import { FaOpencart } from "react-icons/fa";
 import { IoIosPricetags } from "react-icons/io";
 import { GrTools } from "react-icons/gr";
+import dynamic from 'next/dynamic';
+
+const Dashboard = dynamic(() => import('./Dashboard/Page'));
 
 export default function Home() {
+
+  const router = useRouter();
+  
   return (
-    <main className="">
+    <main className=" flex flex-col justify-between ">
       <div className="wrapper flex gap-2 items-center py-6 w-full bg-gray-700 ">
         <div className="w-[20%] text-center h-full"> biddings </div>
         <div className="w-[60%] h-full  justify-center flex ">
           {" "}
           <Feed />{" "}
         </div>
-        <div className="w-[20%] h-full  justify-center flex ">
+        <div  onClick={() => router.push('/Dashboard')} className="w-[20%] h-full  justify-center flex ">
           {" "}
           <User_profile profile="Nabin sharma" />{" "}
         </div>
@@ -58,6 +67,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[20%] h-full  justify-center flex "> </div>
+      </div>
+      <div className='w-full h-[100%]'> 
+      {/* <Dashbord/> */}
+
       </div>
     </main>
   );
